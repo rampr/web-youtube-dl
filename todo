@@ -1,0 +1,14 @@
+read all urls to download from db and download
+if none available wait, and when one becomes available start downloading
+
+Have a form that allows users to input urls and download the file
+create directory - default - Downloads/unnamed etc
+
+
+More features
+-------------
+Show progress
+Show files top in queue
+Show files downloaded
+
+
