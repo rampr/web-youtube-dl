@@ -83,7 +83,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/emacsian/work/python/templates/"
+    "/Users/emacsian/work/python/downloader/templates/"
 )
 
 INSTALLED_APPS = (
@@ -98,4 +98,4 @@ INSTALLED_APPS = (
     #'django.contrib.admin',
 )
 
-STATIC_DOC_ROOT = '/Users/emacsian/work/python/templates/download/static'
+STATIC_DOC_ROOT = '/Users/emacsian/work/python/downloader/templates/download/static'

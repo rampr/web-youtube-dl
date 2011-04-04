@@ -1,0 +1,40 @@
+{% load humanize %}
+
+<table class="tablecontent">
+  <tr>
+    <th>
+      Folder
+    </th>
+    <th>
+      Title
+    </th>
+    <th>
+      Status
+    </th>
+    <th>
+      Created
+    </th>
+    <th>
+      Downloaded
+    </th>
+  </tr>
+  {% for i in info %}
+  <tr>
+    <td>
+      {{ i.folder }}
+    </td>
+    <td>
+      {{ i.title }}
+    </td>
+    <td>
+      {{ i.status }}
+    </td>
+    <td>
+      {{ i.created|naturalday }}
+    </td>
+    <td>
+      {{ i.downloaded|naturalday }}
+    </td>
+  </tr>
+  {% endfor %}
+</table>

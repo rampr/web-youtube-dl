@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/site.css"></link>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jQuery.Validate/1.6/jQuery.Validate.min.js"></script>
+    <script type="text/javascript" src="/static/download.js"></script>
+  </head>
+
+  <body>
+
+    <div id="globalContainer">
+
+      <div id="header">
+        Download Videos <br/>
+        <span style="font-size:12px;">(youtube, metacafe, dailymotion)</span>
+      </div>
+
+      <div id="leftPane">
+
+        <form id="downloadform" action="">
+          <fieldset style="border:medium none;">
+            <legend class="mandatory">(all fields are mandatory)</legend>
+   
+            <table class="downloadtable">
+              <tr>
+                <td class="label"> Folder </td>
+                <td class="userinput"><input type="text" name="folder" id="folder"/></td>
+              </tr>
+              <tr>
+                <td class="label"> Video URL </td>
+                <td class="userinput"><input type="text" name="url" id="url"/></td>
+              </tr>
+              <tr>
+                <td class="label"> Title </td>
+                <td class="userinput"><input type="text" name="title" id="title"/></td>
+              </tr>
+            </table>
+
+            <div style="text-align:center;">
+              <input type="submit" value="Download" name="submit" id="submit"/>
+            </div>
+          </fieldset>
+        </form>
+
+        <span id="message"></span>
+
+      </div>
+
+      <div id="rightPane">
+        <p>Check Status</p>
+        <input type="text" id="search"/> <span class="loader" id="search_loader">Searching..</span>
+        <div id="search_results"></div>
+      </div>
+
+      <div class="clear:both;"></div>
+
+    </div>
+
+
+    <div id="footer">
+      Uses: <a href="http://www.djangoproject.com/">django</a>, <a href="http://gearman.org">gearman</a> & <a href="http://jquery.com/">jquery</a>
+    </div>
+
+  </body>
+</html>
